@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/css/shoot.css" />
+  </head>
+  <body>
+    <header id="header-placeholder"></header>
+    <main>
+      <section class="shoot-main">
+        <div class="container">
+          <h1 class="shoot-main-title" id="shoot-title"></h1>
+
+          <!-- Основне фото -->
+          <div class="main-image">
+            <picture class="main-container-img" id="main-picture">
+              <!-- Для десктопу від 1440px -->
+              <source
+                class="main-img-desktop"
+                media="(min-width: 1440px)"
+                srcset=""
+                id="img-desktop"
+                width="1120"
+                height="560"
+              />
+
+              <!-- Для планшету від 768px до 1439px -->
+              <source
+                class="main-img-tablet"
+                media="(min-width: 768px)"
+                srcset=""
+                id="img-tablet"
+                width="668"
+                height="904"
+              />
+
+              <!-- Для телефону від 0 до 767px -->
+              <img
+                class="main-img-mobile"
+                src=""
+                alt="Main photo"
+                id="img-mobile"
+                width="378"
+                height="500"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="shoot-container-text">
+        <div class="container">
+          <!-- Підзаголовок -->
+          <h2 class="shoot-second-title" id="shoot-subtitle">Overview</h2>
+
+          <!-- Опис фотосесії -->
+          <p class="shoot-text" id="shoot-description"></p>
+        </div>
+      </section>
+      <section class="shoot-img">
+        <div class="container">
+          <!-- Додаткові 3 фото -->
+          <div class="gallery" id="gallery"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="/src/js/data.js"></script>
+    <script src="/src/js/shoot.js"></script>
+  </body>
+</html>
